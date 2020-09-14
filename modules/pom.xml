@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.bank</groupId>
+    <artifactId>Bank--Management</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>modules</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>account-module</module>
+  	<module>customer-module</module>
+  	<module>mutual-fund-module</module>
+  	<module>common-module</module>
+  	<module>cloud-config-module</module>
+  	<module>transaction-service</module>
+  </modules>
+ 
+  <dependencies>
+  	<dependency>
+  		<groupId>org.springframework.cloud</groupId>
+  		<artifactId>
+  			spring-cloud-starter-netflix-eureka-client
+  		</artifactId>
+  		<version>2.2.4.RELEASE</version>
+  	</dependency>
+  		
+  </dependencies>
+</project>

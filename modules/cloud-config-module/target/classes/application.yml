@@ -1,0 +1,12 @@
+server:
+  port: 8888
+spring:  config:    name: configserver  cloud:    config:      server:        git:          uri: https://github.com/srvshrma/BankManagementConfig.git
+          search-paths: 'configuration/{application}'
+          clone-on-start: true
+          
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

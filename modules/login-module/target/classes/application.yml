@@ -1,0 +1,6 @@
+server:
+  port: 8080
+spring:  application:    name: customer-service
+  cloud:    config:      uri:      - http://localhost:8888
+  security:    user:      name: saurav
+      password: cognizant@1
